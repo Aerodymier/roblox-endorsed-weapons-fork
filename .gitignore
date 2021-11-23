@@ -1,6 +1,5 @@
-# Project place file
-/endorsed weapons fork.rbxlx
-
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
+/RojoBuiltPlace/*.rbxl.lock
+/RojoBuiltPlace/*.rbxlx.lock
