@@ -3,11 +3,14 @@
   "tree": {
     "$className": "DataModel",
 
+    "Workspace": {
+      "$className": "Workspace",
+      "$path": "src/workspace"
+    },
+
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "WeaponsSystemClient": {
-        "$path": "src/shared"
-      }
+      "$path": "src/shared"
     },
 
     "ServerScriptService": {
