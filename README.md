@@ -7,13 +7,21 @@ If you wish, you can get the **original** kits from here:
 DevHub page: https://developer.roblox.com/en-us/articles/weapons-kit
 
 -> Pistol: https://www.roblox.com/library/3932996124/Pistol
+
 -> Submachine Gun: https://www.roblox.com/library/3933186135/Submachine-Gun
+
 -> Grenade Launcher: https://www.roblox.com/library/3932970604/Grenade-Launcher
+
 -> Rochet Launcher: https://www.roblox.com/library/3933035051/Rocket-Launcher
+
 -> Sniper: https://www.roblox.com/library/3933205594/Sniper
+
 -> Shotgun: https://www.roblox.com/library/3933198517/Shotgun
+
 -> Auto Rifle: https://www.roblox.com/library/3932803955/Auto-Rifle
+
 -> Crossbow: https://www.roblox.com/library/3932944456/Crossbow
+
 -> Railgun: https://www.roblox.com/library/3933019552/Railgun
 
 ## Installations
