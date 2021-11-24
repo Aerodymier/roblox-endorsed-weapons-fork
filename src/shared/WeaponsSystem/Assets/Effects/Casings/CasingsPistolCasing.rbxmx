@@ -1,0 +1,147 @@
+<roblox version="4">
+  <Item class="MeshPart" referent="0">
+    <Properties>
+      <string name="Name">PistolCasing</string>
+      <bool name="Anchored">false</bool>
+      <BinaryString name="AttributesSerialize">
+      </BinaryString>
+      <float name="BackParamA">-0.5</float>
+      <float name="BackParamB">0.5</float>
+      <token name="BackSurface">0</token>
+      <token name="BackSurfaceInput">0</token>
+      <float name="BottomParamA">-0.5</float>
+      <float name="BottomParamB">0.5</float>
+      <token name="BottomSurface">0</token>
+      <token name="BottomSurfaceInput">0</token>
+      <CoordinateFrame name="CFrame">
+        <X>-10.572</X>
+        <Y>9.708</Y>
+        <Z>-105.981</Z>
+        <R00>0</R00>
+        <R01>1</R01>
+        <R02>0</R02>
+        <R10>-1</R10>
+        <R11>0</R11>
+        <R12>0</R12>
+        <R20>0</R20>
+        <R21>0</R21>
+        <R22>1</R22>
+      </CoordinateFrame>
+      <bool name="CanCollide">true</bool>
+      <bool name="CanQuery">true</bool>
+      <bool name="CanTouch">true</bool>
+      <bool name="CastShadow">true</bool>
+      <int name="CollisionGroupId">0</int>
+      <Color3uint8 name="Color3uint8">16756736</Color3uint8>
+      <PhysicalProperties name="CustomPhysicalProperties">
+        <CustomPhysics>false</CustomPhysics>
+      </PhysicalProperties>
+      <bool name="DoubleSided">false</bool>
+      <float name="FrontParamA">-0.5</float>
+      <float name="FrontParamB">0.5</float>
+      <token name="FrontSurface">0</token>
+      <token name="FrontSurfaceInput">0</token>
+      <bool name="HasJointOffset">false</bool>
+      <bool name="HasSkinnedMesh">false</bool>
+      <Vector3 name="InitialSize">
+        <X>2.0782347</X>
+        <Y>2.668536</Y>
+        <Z>2.078235</Z>
+      </Vector3>
+      <Vector3 name="JointOffset">
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </Vector3>
+      <BinaryString name="LODData">
+      </BinaryString>
+      <float name="LeftParamA">-0.5</float>
+      <float name="LeftParamB">0.5</float>
+      <token name="LeftSurface">0</token>
+      <token name="LeftSurfaceInput">0</token>
+      <bool name="Locked">false</bool>
+      <bool name="Massless">false</bool>
+      <token name="Material">1088</token>
+      <Content name="MeshID">
+        <url>rbxassetid://2794279992</url>
+      </Content>
+      <Content name="MeshId">
+        <url>rbxassetid://2794279992</url>
+      </Content>
+      <SharedString name="PhysicalConfigData">jMO+3ujG8WZbCV+FbCLE5Q==</SharedString>
+      <BinaryString name="PhysicsData">
+      </BinaryString>
+      <CoordinateFrame name="PivotOffset">
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <R00>1</R00>
+        <R01>0</R01>
+        <R02>0</R02>
+        <R10>0</R10>
+        <R11>1</R11>
+        <R12>0</R12>
+        <R20>0</R20>
+        <R21>0</R21>
+        <R22>1</R22>
+      </CoordinateFrame>
+      <float name="Reflectance">0</float>
+      <token name="RenderFidelity">1</token>
+      <float name="RightParamA">-0.5</float>
+      <float name="RightParamB">0.5</float>
+      <token name="RightSurface">0</token>
+      <token name="RightSurfaceInput">0</token>
+      <int name="RootPriority">0</int>
+      <Vector3 name="RotVelocity">
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </Vector3>
+      <Vector3 name="size">
+        <X>0.083</X>
+        <Y>0.107</Y>
+        <Z>0.083</Z>
+      </Vector3>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+      <Content name="TextureID">
+        <url>rbxassetid://2794275376</url>
+      </Content>
+      <float name="TopParamA">-0.5</float>
+      <float name="TopParamB">0.5</float>
+      <token name="TopSurface">0</token>
+      <token name="TopSurfaceInput">0</token>
+      <float name="Transparency">1</float>
+      <Vector3 name="Velocity">
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </Vector3>
+    </Properties>
+    <Item class="Sound" referent="1">
+      <Properties>
+        <string name="Name">CasingHitSound</string>
+        <BinaryString name="AttributesSerialize">
+        </BinaryString>
+        <float name="EmitterSize">1</float>
+        <bool name="Looped">false</bool>
+        <float name="xmlRead_MaxDistance_3">10000</float>
+        <bool name="PlayOnRemove">false</bool>
+        <float name="PlaybackSpeed">1</float>
+        <bool name="Playing">false</bool>
+        <token name="RollOffMode">0</token>
+        <Ref name="SoundGroup">null</Ref>
+        <Content name="SoundId">
+          <url>rbxassetid://3909012115</url>
+        </Content>
+        <int64 name="SourceAssetId">-1</int64>
+        <BinaryString name="Tags"></BinaryString>
+        <double name="TimePosition">0</double>
+        <float name="Volume">1</float>
+      </Properties>
+    </Item>
+  </Item>
+  <SharedStrings>
+    <SharedString md5="jMO+3ujG8WZbCV+FbCLE5Q==">Q1NHUEhTAAAAAEJMT0NL</SharedString>
+  </SharedStrings>
+</roblox>

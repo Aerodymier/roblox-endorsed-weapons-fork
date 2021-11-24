@@ -1,0 +1,12 @@
+<roblox version="4">
+  <Item class="IntValue" referent="0">
+    <Properties>
+      <string name="Name">Version</string>
+      <BinaryString name="AttributesSerialize">
+      </BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+      <int64 name="Value">0</int64>
+    </Properties>
+  </Item>
+</roblox>

@@ -1,0 +1,14 @@
+<roblox version="4">
+  <Item class="Animation" referent="0">
+    <Properties>
+      <string name="Name">RifleAimDownSights</string>
+      <Content name="AnimationId">
+        <url>rbxassetid://3972157449</url>
+      </Content>
+      <BinaryString name="AttributesSerialize">
+      </BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+    </Properties>
+  </Item>
+</roblox>
