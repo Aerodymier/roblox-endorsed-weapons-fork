@@ -1,0 +1,7 @@
+std = "roblox"
+
+[rules]
+multiple_statements = "allow"
+
+[config]
+empty_if = { comments_count = true }

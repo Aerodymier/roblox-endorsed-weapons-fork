@@ -16,16 +16,16 @@ local function handleLoops(object, folderName)
             handleLoops(v, dir)
         end
     else
-        local dir = "../src/" .. folderName .. "/" .. object.Parent.Name
+        local dir = "../src/" .. folderName .. "/" .. object.Name
 
         if object.ClassName == "LocalScript" then
-            remodel.writeFile(object, dir .. object.Name .. ".client.lua", object)
+            remodel.writeFile(dir .. ".client.lua", remodel.getRawProperty(object, "Source"))
         elseif object.ClassName == "Script" then
-            remodel.writeFile(dir .. object.Name .. ".server.lua", object)
+            remodel.writeFile(dir .. ".server.lua", remodel.getRawProperty(object, "Source"))
         elseif object.ClassName == "ModuleScript" then
-            remodel.writeFile(dir .. object.Name .. ".lua", object)
+            remodel.writeFile(dir .. ".lua", remodel.getRawProperty(object, "Source"))
         else
-            remodel.writeModelFile(object, dir .. object.Name .. ".rbxmx")
+            remodel.writeModelFile(object, dir .. ".rbxmx")
         end
     end
 end
@@ -46,7 +46,7 @@ for _, object in ipairs(ServerStorage:GetDescendants()) do
     handleLoops(object, "storage")
 end
 
-for _, object in ipairs(StarterPack:GetDescendants()) do
+for _, object in ipairs(StarterPack:GetChildren()) do
     handleLoops(object, "starterpack")
 end
 

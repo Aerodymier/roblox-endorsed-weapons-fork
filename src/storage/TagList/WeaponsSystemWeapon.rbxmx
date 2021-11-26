@@ -1,0 +1,10 @@
+<roblox version="4">
+  <Item class="Configuration" referent="0">
+    <Properties>
+      <string name="Name">WeaponsSystemWeapon</string>
+      <BinaryString name="AttributesSerialize"><![CDATA[BgAAAAsAAABBbHdheXNPblRvcAMABQAAAENvbG9yD4MTrj3E/JY+bwiiPggAAABEcmF3VHlwZQIDAAAAQm94BQAAAEdyb3VwAgAAAAAEAAAASWNvbgIJAAAAdGFnX2dyZWVuBwAAAFZpc2libGUDAQ==]]></BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+    </Properties>
+  </Item>
+</roblox>

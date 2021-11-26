@@ -1,0 +1,12 @@
+<roblox version="4">
+  <Item class="BoolValue" referent="0">
+    <Properties>
+      <string name="Name">SlowZoomWalkEnabled</string>
+      <BinaryString name="AttributesSerialize">
+      </BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+      <bool name="Value">true</bool>
+    </Properties>
+  </Item>
+</roblox>
