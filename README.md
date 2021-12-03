@@ -1,6 +1,6 @@
 # Roblox Endorsed Weapons Fork
 This is a fork of Roblox's "Endorsed Weapons Kit".
-It includes some bug/error fixes from original kit, as well as a camera release script located in StarterClientScripts.
+It includes some bug/error fixes from original kit, as well as a camera release script located in StarterPlayerScripts.
 
 If you wish, you can get the **original** kits from here:
 
@@ -28,7 +28,7 @@ DevHub page: https://developer.roblox.com/en-us/articles/weapons-kit
 To get the forked model, you can follow these instructions:
 
 ## Instructions for Roblox Studio
-Get the model here: TBD
+Get the model here: https://www.roblox.com/library/8165353230/WeaponsSystemFork
 
 Go to Roblox Studio, open a place and open your toolbox. Then go to the second tab and select "My Models". Drag the model you've taken from Roblox website to viewport or explorer. Place the folders to their respective places. For example, if a folder is under a model named "ReplicatedStorage", put it to ReplicatedStorage **without** including the model instance. If you are still unsure about the process, check out my video about it (TBD) or inspect the place located in source code's StudioPlace folder. Download and open it for an example.
 
