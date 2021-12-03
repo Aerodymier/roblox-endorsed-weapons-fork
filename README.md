@@ -1,6 +1,7 @@
 # Roblox Endorsed Weapons Fork
 This is a fork of Roblox's "Endorsed Weapons Kit".
 It includes some bug/error fixes from original kit, as well as a camera release script located in StarterPlayerScripts.
+There's also some missing features like TagEditor tags folder and tagHumanoid functions for easy leaderboard integration.
 
 If you wish, you can get the **original** kits from here:
 
