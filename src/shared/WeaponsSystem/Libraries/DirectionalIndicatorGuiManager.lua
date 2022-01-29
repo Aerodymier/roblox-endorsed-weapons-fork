@@ -91,7 +91,7 @@ function DirectionalIndicatorGuiManager:ActivateDirectionalIndicator(DIName, oth
 
 	-- Show indicator for a bit, then fade out
 	coroutine.wrap(function()
-		wait(GetConfigValue(diInfo.config, "TimeBeforeFade", 1))
+		task.wait(GetConfigValue(diInfo.config, "TimeBeforeFade", 1))
 		local tweenInfo = TweenInfo.new(GetConfigValue(diInfo.config, "FadeTime", 1))
 		local goal = {}
 		goal.ImageTransparency = 1

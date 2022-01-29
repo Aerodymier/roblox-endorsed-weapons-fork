@@ -41,7 +41,7 @@ function Roblox.waitForDescendant(instance, descendantName, timeout)
 
 	if timeout < 1e6 and timeout > 0 then
 		coroutine.wrap(function()
-			wait(timeout)
+			task.wait(timeout)
 			if not found then
 				warn("Roblox.waitForDescendant(%s, %s) is taking too long")
 			end
@@ -115,7 +115,7 @@ end
 function Roblox.waitForTween(tweenInstance, tweenInfo, tweenProps)
 	local tween = TweenService:Create(tweenInstance, tweenInfo, tweenProps)
 	tween:Play()
-	tween.Completed:wait()
+	tween.Completed:Wait()
 end
 
 function Roblox.tween(tweenInstance, tweenInfo, tweenProps)

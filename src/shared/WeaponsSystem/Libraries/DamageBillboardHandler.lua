@@ -32,9 +32,9 @@ function DamageBillboardHandler:CreateBillboardForAdornee(adornee)
 	adorneeToBillboardGui[adornee] = billboard
 
 	local ancestorCon
-	ancestorCon = adornee.AncestryChanged:connect(function(child, parent)
+	ancestorCon = adornee.AncestryChanged:Connect(function(child, parent)
 		if parent == nil then
-			ancestorCon:disconnect()
+			ancestorCon:Disconnect()
 			ancestorCon = nil
 
 			local adorneeBillboard = adorneeToBillboardGui[adornee]
@@ -102,8 +102,8 @@ function DamageBillboardHandler:ShowDamageBillboard(damageAmount, adornee)
 	)
 
 	local completedCon
-	completedCon = upTween.Completed:connect(function()
-		completedCon:disconnect()
+	completedCon = upTween.Completed:Connect(function()
+		completedCon:Disconnect()
 		completedCon = nil
 		damageNumber:Destroy()
 	end)

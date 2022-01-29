@@ -21,6 +21,6 @@ function disableCamera()
 end
 
 contextAction:BindAction("DisableCamera", disableCamera, true, Enum.KeyCode.F, Enum.KeyCode.ButtonB)
-repeat wait() until contextAction:GetButton("DisableCamera")
+repeat task.wait() until contextAction:GetButton("DisableCamera")
 contextAction:SetPosition("DisableCamera",  UDim2.new(0.4, 0, 0, 30))
 contextAction:SetImage("DisableCamera", "http://www.roblox.com/asset/?id=6734359065")

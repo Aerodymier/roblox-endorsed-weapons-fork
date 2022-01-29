@@ -95,7 +95,7 @@ function BaseWeapon:doInitialSetup()
 				if self:getAmmoInWeapon() <= 0 then
 					-- Have to wait a frame, otherwise the reload animation will not play
 					coroutine.wrap(function()
-						wait()
+						task.wait()
 						self:reload()
 					end)()
 				end
@@ -394,7 +394,7 @@ function BaseWeapon:tryPlaySound(soundName, playbackSpeedRange)
 	sound.Parent = soundTemplate.Parent
 	sound:Play()
 	coroutine.wrap(function()
-		wait(sound.TimeLength / sound.PlaybackSpeed)
+		task.wait(sound.TimeLength / sound.PlaybackSpeed)
 		sound:Destroy()
 	end)()
 
