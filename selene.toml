@@ -2,6 +2,7 @@ std = "roblox"
 
 [rules]
 multiple_statements = "allow"
+unused_variable = "allow"
 
 [config]
 empty_if = { comments_count = true }
