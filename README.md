@@ -41,4 +41,10 @@ ServerStorage has TagList tags for weapons.
 # Usage
 Once you install it, it's done! Use the guns from Roblox's kit for other guns. Delete WeaponsSystem folder inside of them after you insert these guns. Alternatively, you can use your own guns, however do not forget to set them up like how Roblox has theirs set up. You should consider having Tag Editor (https://www.roblox.com/library/948084095/Tag-Editor) for custom guns so you can tag them as "WeaponsSystemWeapon".
 
-If you have more questions, you can open an issue. 
+If you have more questions, you can open an issue.
+
+## Adding custom guns
+Video tutorial: TBD
+
+Roblox has already done a really good job here with this page: https://developer.roblox.com/en-us/articles/weapons-kit
+There's everything you need for configuration/custom gun addition.
