@@ -44,7 +44,7 @@ Once you install it, it's done! Use the guns from Roblox's kit for other guns. D
 If you have more questions, you can open an issue.
 
 ## Adding custom guns
-Video tutorial: TBD
+Video tutorial: https://youtu.be/CO5inulxh6Y
 
 Roblox has already done a really good job here with this page: https://developer.roblox.com/en-us/articles/weapons-kit
-There's everything you need for configuration/custom gun addition.
+There's everything about configuration options in this page.
