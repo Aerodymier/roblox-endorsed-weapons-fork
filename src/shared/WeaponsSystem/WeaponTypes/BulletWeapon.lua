@@ -505,7 +505,8 @@ function BulletWeapon:simulateProjectile(firingPlayer, fireInfo, projectileIdx, 
 							   explodedPart.Parent ~= self.player.Character and
 							   self.weaponsSystem.playersOnDifferentTeams(self.weaponsSystem.getPlayerFromHumanoid(humanoid), self.player)
 							then
-								self.weaponsSystem.gui:OnHitOtherPlayer(self:calculateDamage(hitInfo.d), humanoid)
+								local headshotMultiplier = self:getConfigValue("HeadshotMultiplier", 1)
+								self.weaponsSystem.gui:OnHitOtherPlayer(self:calculateDamage(hitInfo.d), humanoid, headshotMultiplier)
 							end
 						end)
 					end
@@ -732,6 +733,11 @@ end
 
 function BulletWeapon:applyDamage(hitInfo)
 	local damage = self:calculateDamage(hitInfo.d)
+	local headshotMultiplier = self:getConfigValue("HeadshotMultiplier", 1)
+
+	if hitInfo.part.Name == "Head" then
+		damage = damage * headshotMultiplier
+	end
 
 	if damage <= 0 then
 		return
@@ -744,6 +750,7 @@ function BulletWeapon:onHit(hitInfo)
 	local hitPoint = hitInfo.p
 	local hitNormal = hitInfo.n
 	local hitPart = hitInfo.part
+	local headshotMultiplier = self:getConfigValue("HeadshotMultiplier", 1)
 
 	if hitPart and hitPart.Parent then
 		local humanoid = self.weaponsSystem.getHumanoid(hitPart)
@@ -761,7 +768,7 @@ function BulletWeapon:onHit(hitInfo)
 			self.weaponsSystem.playersOnDifferentTeams(self.weaponsSystem.getPlayerFromHumanoid(hitInfo.h), self.player)
 		then
 			-- Show hit indicators on gui of client that shot projectile if players are not on same team
-			self.weaponsSystem.gui:OnHitOtherPlayer(self:calculateDamage(hitInfo.d), hitInfo.h)
+			self.weaponsSystem.gui:OnHitOtherPlayer(self:calculateDamage(hitInfo.d), hitInfo.h, headshotMultiplier)
 		end
 	end
 
