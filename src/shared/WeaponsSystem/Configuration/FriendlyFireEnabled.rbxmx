@@ -6,7 +6,7 @@
       </BinaryString>
       <int64 name="SourceAssetId">-1</int64>
       <BinaryString name="Tags"></BinaryString>
-      <bool name="Value">true</bool>
+      <bool name="Value">false</bool>
     </Properties>
   </Item>
 </roblox>
