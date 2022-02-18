@@ -19,7 +19,8 @@ local Configuration = WeaponsSystemFolder:WaitForChild("Configuration")
 local ConfigurationValues = {
 	SprintEnabled = Configuration:WaitForChild("SprintEnabled"),
 	SlowZoomWalkEnabled = Configuration:WaitForChild("SlowZoomWalkEnabled"),
-	FriendlyFireEnabled = Configuration:WaitForChild("FriendlyFireEnabled")
+	FriendlyFireEnabled = Configuration:WaitForChild("FriendlyFireEnabled"),
+	UseCamOnlyWhenEquipped = Configuration:WaitForChild("UseCamOnlyWhenEquipped")
 }
 
 local WEAPON_TAG = "WeaponsSystemWeapon"
@@ -185,7 +186,7 @@ function WeaponsSystem.setup()
 		end
 
 		WeaponsSystem.networkFolder = networkFolder
-		WeaponsSystem.camera:setEnabled(true)
+		WeaponsSystem.camera:setEnabled(not ConfigurationValues.UseCamOnlyWhenEquipped.Value)
 	end
 
 	--Setup weapon tools and listening
@@ -373,6 +374,16 @@ function WeaponsSystem.setWeaponEquipped(weapon, equipped)
 			WeaponsSystem.currentWeapon = nil
 			hasWeapon = false
 			weaponChanged = true
+
+			if ConfigurationValues.UseCamOnlyWhenEquipped.Value then
+				local weaponUser = weapon.player
+				local weaponUserHumanoid = weaponUser.Character:FindFirstChildOfClass("Humanoid")
+
+				WeaponsSystem.camera:setEnabled(false)
+				WeaponsSystem.gui:setEnabled(false)
+				WeaponsSystem.camera.mouseLocked = false
+				workspace.CurrentCamera.CameraSubject = weaponUserHumanoid
+			end
 		else
 			weaponChanged = false
 		end
@@ -381,6 +392,12 @@ function WeaponsSystem.setWeaponEquipped(weapon, equipped)
 			WeaponsSystem.currentWeapon = weapon
 			hasWeapon = true
 			weaponChanged = true
+			
+			if ConfigurationValues.UseCamOnlyWhenEquipped.Value then
+				WeaponsSystem.camera:setEnabled(true)
+				WeaponsSystem.gui:setEnabled(true)
+				WeaponsSystem.camera.mouseLocked = true
+			end
 		end
 	end
 
