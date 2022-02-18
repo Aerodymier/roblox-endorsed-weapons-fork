@@ -281,7 +281,7 @@ function WeaponsGui:setCrosshairScale(scale)
 	SpringService:Target(self, self.crosshairDampingRatio, self.crosshairFrequency, { crosshairScale = self.crosshairScaleTarget })
 end
 
-function WeaponsGui:OnHitOtherPlayer(damage, humanoidHit) -- show hit indicator, then fade
+function WeaponsGui:OnHitOtherPlayer(damage, humanoidHit, headshotMultiplier) -- show hit indicator, then fade
 	self.hitMarker.ImageTransparency = 0
 	local tweenInfo = TweenInfo.new(0.8)
 	local goal = {}
@@ -289,7 +289,7 @@ function WeaponsGui:OnHitOtherPlayer(damage, humanoidHit) -- show hit indicator,
 	local tween = TweenService:Create(self.hitMarker, tweenInfo, goal)
 	tween:Play()
 
-	DamageBillboardHandler:ShowDamageBillboard(damage, humanoidHit.Parent:FindFirstChild("Head"))
+	DamageBillboardHandler:ShowDamageBillboard(damage * headshotMultiplier, humanoidHit.Parent:FindFirstChild("Head"))
 end
 
 function WeaponsGui:onRenderStepped(dt)
