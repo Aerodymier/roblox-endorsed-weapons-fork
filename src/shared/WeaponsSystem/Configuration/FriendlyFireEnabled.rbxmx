@@ -1,7 +1,7 @@
 <roblox version="4">
   <Item class="BoolValue" referent="0">
     <Properties>
-      <string name="Name">FriendlyFireBetweenTeamsEnabled</string>
+      <string name="Name">FriendlyFireEnabled</string>
       <BinaryString name="AttributesSerialize">
       </BinaryString>
       <int64 name="SourceAssetId">-1</int64>
