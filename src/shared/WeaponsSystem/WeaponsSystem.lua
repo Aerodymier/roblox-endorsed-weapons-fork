@@ -187,6 +187,7 @@ function WeaponsSystem.setup()
 
 		WeaponsSystem.networkFolder = networkFolder
 		WeaponsSystem.camera:setEnabled(not ConfigurationValues.UseCamOnlyWhenEquipped.Value)
+		WeaponsSystem.camera.currentCamera = workspace.CurrentCamera
 	end
 
 	--Setup weapon tools and listening
@@ -383,6 +384,7 @@ function WeaponsSystem.setWeaponEquipped(weapon, equipped)
 				WeaponsSystem.gui:setEnabled(false)
 				WeaponsSystem.camera.mouseLocked = false
 				workspace.CurrentCamera.CameraSubject = weaponUserHumanoid
+				WeaponsSystem.camera.currnetCamera = workspace.CurrentCamera
 			end
 		else
 			weaponChanged = false
