@@ -48,3 +48,31 @@ Video tutorial: https://youtu.be/CO5inulxh6Y
 
 Roblox has already done a really good job here with this page: https://developer.roblox.com/en-us/articles/weapons-kit
 There's everything about configuration options in this page.
+
+# Configuration
+The configuration options in https://developer.roblox.com/en-us/articles/weapons-kit are here as well but there are some extras:
+
+## Global configuration options
+These are located in ReplicatedStorage's Configuration folder.
+
+1) You can set "friendly fire" which allows or disallows players on different teams to damage each other.
+
+    > This is called FriendlyFireEnabled and has the value of **false** by default which disables friendly fire.
+
+2) You can set if the weapon camera will stay on when you unequip the gun. This shift-lock cam might be helpful in some cases.
+
+    If this property is set to **false**, the DisableCam script will get activated and if player hits the F key (and other appropriate buttons for console and mobile) the camera will get disabled.
+
+    > This is called UseCamOnlyWhenEquipped and has the value of **true** by default which disables the camera when player unequips the gun.
+
+## Gun configuration options
+These are located in the Configuration folder of your specific weapon.
+
+1) You can set a headshot multiplier for your guns which will multiply the gun's damage if player hits the enemy's character head.
+
+    - Characters need to have their character head part named "Head" for this to be compatible.
+
+    > If you want to set a headshot multiplier, put a NumberValue in your gun's Configuration folder, name it **HeadshotMultiplier** and set its value to the multiplier amount you want. Keep in mind that negative values and 0 might have side effects. Defaults to **1** which disables headshot multiplier.
+
+# Issues
+I'd rather seeing all issues with this gun kit fork with GitHub's issues feature and not with anything else. I will try to take care of them as much as possible.
