@@ -53,7 +53,7 @@ There's everything about configuration options in this page.
 The configuration options in https://developer.roblox.com/en-us/articles/weapons-kit are here as well but there are some extras:
 
 ## Global configuration options
-These are located in ReplicatedStorage's Configuration folder.
+These are located in WeaponsSystemFolder's Configuration folder which should be in ReplicatedStorage.
 
 1) You can set "friendly fire" which allows or disallows players on different teams to damage each other.
 
