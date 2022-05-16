@@ -287,6 +287,9 @@ function ShoulderCamera:setEnabled(enabled)
 
 		UserInputService.MouseBehavior = Enum.MouseBehavior.Default
 		UserInputService.MouseIconEnabled = true
+		ShoulderCamera.SpringService:Target(self.currentHumanoid, 0.95, 4, { WalkSpeed = self.normalWalkSpeed })
+		ShoulderCamera.SpringService:Target(self, 0.8, 3, { zoomAlpha = self.zoomState and 1 or 0 })
+		ShoulderCamera.SpringService:Target(self.currentCamera, 0.8, 3, { FieldOfView = self.desiredFieldOfView })
 	end
 end
 
