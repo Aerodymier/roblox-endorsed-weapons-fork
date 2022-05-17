@@ -1,4 +1,4 @@
-local game = remodel.readPlaceFile("../StudioPlace/place.rbxl")
+local game = remodel.readPlaceFile("../PlaceBuild/output.rbxlx")
 
 local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
