@@ -445,8 +445,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">11</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">11</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -471,8 +471,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">13</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">13</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -497,8 +497,8 @@
               <R21>0</R21>
               <R22>0</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">15</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">15</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -523,8 +523,8 @@
               <R21>-0.000000021855694</R21>
               <R22>0.000000037855173</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">17</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">17</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -549,8 +549,8 @@
               <R21>0.000000021855694</R21>
               <R22>0.000000037855173</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">19</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">19</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -575,8 +575,8 @@
               <R21>0</R21>
               <R22>0</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">21</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">21</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -601,8 +601,8 @@
               <R21>0</R21>
               <R22>-0</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">23</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">23</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
