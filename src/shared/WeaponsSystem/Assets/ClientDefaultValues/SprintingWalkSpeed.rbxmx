@@ -1,0 +1,12 @@
+<roblox version="4">
+  <Item class="NumberValue" referent="0">
+    <Properties>
+      <string name="Name">SprintingWalkSpeed</string>
+      <BinaryString name="AttributesSerialize">
+      </BinaryString>
+      <int64 name="SourceAssetId">-1</int64>
+      <BinaryString name="Tags"></BinaryString>
+      <double name="Value">24</double>
+    </Properties>
+  </Item>
+</roblox>
