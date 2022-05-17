@@ -76,5 +76,15 @@ These are located in the Configuration folder of your specific weapon.
 
     > If you want to set a headshot multiplier, put a NumberValue in your gun's Configuration folder, name it **HeadshotMultiplier** and set its value to the multiplier amount you want. Keep in mind that negative values and 0 might have side effects. Defaults to **1** which disables headshot multiplier.
 
+## Client configuration options
+This is a feature which is not present in original version, sometimes you might want to change the player walk speed in game and if this change is not done, the gun script will overwrite the walk speed you set for player (guns have walk speed settings for both aiming and sprinting, also the normal walk speed gets set when player stops interacting with the gun). There are some more configuration options and all of them are listed here:
+
+These are located in ClientDefaultValues which is in WeaponsSystem folder's Assets folder. This folder gets parented to the player object once player joins, so that's where you can change these values from.
+
+1) SprintingWalkSpeed [NumberValue]: The walk speed which will get applied when the player is sprinting.
+2) NormalWalkSpeed [NumberValue]: The walk speed which will get applied when player stops interacting with their gun.
+3) ZoomWalkSpeed [NumberValue]: The walk speed which will get applied when player starts zooming with a gun.
+4) FieldofView [NumberValue]: The field of view which will be the base field of view for guns.
+
 # Issues
 I'd rather seeing all issues with this gun kit fork with GitHub's issues feature and not with anything else. I will try to take care of them as much as possible.
