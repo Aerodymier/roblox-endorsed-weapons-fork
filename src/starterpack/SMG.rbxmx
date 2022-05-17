@@ -79,6 +79,7 @@
         <bool name="Locked">false</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
+        <string name="MaterialVariantSerialized"></string>
         <CoordinateFrame name="PivotOffset">
           <X>0</X>
           <Y>0</Y>
@@ -167,7 +168,7 @@
         <OptionalCoordinateFrame name="WorldPivotData">
           <CFrame>
             <X>-53.734585</X>
-            <Y>6.5539055</Y>
+            <Y>6.553906</Y>
             <Z>-107.08296</Z>
             <R00>0.030128004</R00>
             <R01>0</R01>
@@ -244,6 +245,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">1088</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2492936134</url>
           </Content>
@@ -332,7 +334,7 @@
             <BinaryString name="AttributesSerialize">
             </BinaryString>
             <float name="Brightness">1</float>
-            <ColorSequence name="Color">0 0.8392157 0.67058825 0 0 1 1 0.91764706 0.43529412 0 </ColorSequence>
+            <ColorSequence name="Color">0 0.839216 0.670588 0 0 1 1 0.917647 0.435294 0 </ColorSequence>
             <float name="CurveSize0">0</float>
             <float name="CurveSize1">0</float>
             <bool name="Enabled">false</bool>
@@ -584,6 +586,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">1088</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2492936444</url>
           </Content>
