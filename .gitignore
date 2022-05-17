@@ -1,8 +1,5 @@
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
-/RojoBuiltPlace/*.rbxl.lock
-/RojoBuiltPlace/*.rbxlx.lock
-/StudioPlace/*.rbxl.lock
-/StudioPlace/*.rbxlx.lock
-/.remodel/all-in-one-model/*
+/PlaceBuild/*rbxl.lock
+/PlaceBuild/*rbxlx.lock
