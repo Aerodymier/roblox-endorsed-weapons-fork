@@ -125,8 +125,10 @@ function ShoulderCamera.new(weaponsSystem)
 	local self = setmetatable({}, ShoulderCamera)
 	self.weaponsSystem = weaponsSystem
 
+	local playerDefaultValues = LocalPlayer:WaitForChild("ClientDefaultValues")
+
 	-- Configuration parameters (constants)
-	self.fieldOfView = 70
+	self.fieldOfView = playerDefaultValues.FieldofView.Value
 	self.minPitch = math.rad(-75) -- min degrees camera can angle down
 	self.maxPitch = math.rad(75) -- max degrees camera can cangle up
 	self.normalOffset = Vector3.new(2.25, 2.25, 10.5) -- this is the camera's offset from the player
@@ -147,9 +149,9 @@ function ShoulderCamera.new(weaponsSystem)
 	self.rotateCharacterWithCamera = true
 	self.gamepadSensitivityModifier = Vector2.new(0.85, 0.65)
 	-- Walk speeds
-	self.zoomWalkSpeed = 8
-	self.normalWalkSpeed = 16
-	self.sprintingWalkSpeed = 24
+	self.zoomWalkSpeedObject = playerDefaultValues:WaitForChild("ZoomWalkSpeed")
+	self.normalWalkSpeedObject = playerDefaultValues:WaitForChild("NormalWalkSpeed")
+	self.sprintingWalkSpeedObject = playerDefaultValues:WaitForChild("SprintingWalkSpeed")
 
 	-- Current state
 	self.enabled = false
@@ -164,7 +166,7 @@ function ShoulderCamera.new(weaponsSystem)
 	self.touchPanAccumulator = Vector2.new(0, 0) -- used for touch devices, represents amount the player has dragged their finger since starting a touch
 	self.currentTool = nil
 	self.sprintingInputActivated = false
-	self.desiredWalkSpeed = self.normalWalkSpeed
+	self.desiredWalkSpeed = self.normalWalkSpeedObject.Value
 	self.sprintEnabled = false -- true means player will move faster while doing sprint inputs
 	self.slowZoomWalkEnabled = false -- true means player will move slower while doing zoom inputs
 	self.desiredFieldOfView = self.fieldOfView
@@ -287,7 +289,7 @@ function ShoulderCamera:setEnabled(enabled)
 
 		UserInputService.MouseBehavior = Enum.MouseBehavior.Default
 		UserInputService.MouseIconEnabled = true
-		ShoulderCamera.SpringService:Target(self.currentHumanoid, 0.95, 4, { WalkSpeed = self.normalWalkSpeed })
+		ShoulderCamera.SpringService:Target(self.currentHumanoid, 0.95, 4, { WalkSpeed = self.normalWalkSpeedObject.Value })
 		ShoulderCamera.SpringService:Target(self, 0.8, 3, { zoomAlpha = self.zoomState and 1 or 0 })
 		ShoulderCamera.SpringService:Target(self.currentCamera, 0.8, 3, { FieldOfView = self.desiredFieldOfView })
 	end
@@ -326,12 +328,12 @@ function ShoulderCamera:onRenderStep(dt)
 
 	-- Handle walk speed changes
 	if self.sprintEnabled or self.slowZoomWalkEnabled then
-		self.desiredWalkSpeed = self.normalWalkSpeed
+		self.desiredWalkSpeed = self.normalWalkSpeedObject.Value
 		if self.sprintEnabled and (self.sprintingInputActivated or self:sprintFromTouchInput() or self:sprintFromGamepadInput()) and not self.zoomState then
-			self.desiredWalkSpeed = self.sprintingWalkSpeed
+			self.desiredWalkSpeed = self.sprintingWalkSpeedObject.Value
 		end
 		if self.slowZoomWalkEnabled and self.zoomAlpha > 0.1 then
-			self.desiredWalkSpeed = self.zoomWalkSpeed
+			self.desiredWalkSpeed = self.zoomWalkSpeedObject.Value
 		end
 
 		ShoulderCamera.SpringService:Target(self.currentHumanoid, 0.95, 4, { WalkSpeed = self.desiredWalkSpeed })

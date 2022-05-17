@@ -70,6 +70,9 @@ local function setupClientWeaponsScript(player)
 		clientWeaponsScript = weaponsSystemFolder.ClientWeaponsScript:Clone()
 		clientWeaponsScript.Parent = player.PlayerGui
 	end
+
+	local clientDefaultValuesFolder: Folder = weaponsSystemFolder.Assets.ClientDefaultValues:Clone()
+	clientDefaultValuesFolder.Parent = player
 end
 
 Players.PlayerAdded:Connect(function(player)
