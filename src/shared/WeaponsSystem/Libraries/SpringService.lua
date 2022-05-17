@@ -116,7 +116,7 @@ local LinearValue = {} do
 
 	function LinearValue:__add(rhs)
 		-- vector + vector
-		assert(type(rhs) == 'table', "The provided value " .. rhs .. " has to be a table.")
+		assert(type(rhs) == 'table', "The provided value has to be a table.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
@@ -128,7 +128,7 @@ local LinearValue = {} do
 
 	function LinearValue:__sub(rhs)
 		-- vector - vector
-		assert(type(rhs) == 'table', "The provided value " .. rhs .. " has to be a table.")
+		assert(type(rhs) == 'table', "The provided value has to be a table.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
