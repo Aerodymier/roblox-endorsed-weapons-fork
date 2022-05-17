@@ -79,6 +79,7 @@
         <bool name="Locked">false</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
+        <string name="MaterialVariantSerialized"></string>
         <CoordinateFrame name="PivotOffset">
           <X>0</X>
           <Y>0</Y>
@@ -166,9 +167,9 @@
         <BinaryString name="Tags"></BinaryString>
         <OptionalCoordinateFrame name="WorldPivotData">
           <CFrame>
-            <X>-6.0788264</X>
+            <X>-6.078827</X>
             <Y>6.185199</Y>
-            <Z>-105.879845</Z>
+            <Z>-105.87985</Z>
             <R00>0.0061130025</R00>
             <R01>0</R01>
             <R02>-0.99998134</R02>
@@ -244,6 +245,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">256</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2759060040</url>
           </Content>
@@ -319,8 +321,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">5</Ref>
-            <Ref name="Part1">4</Ref>
+            <Ref name="Part0Internal">5</Ref>
+            <Ref name="Part1Internal">4</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -390,6 +392,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">256</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2759059561</url>
           </Content>
@@ -568,7 +571,7 @@
             <BinaryString name="AttributesSerialize">
             </BinaryString>
             <float name="Brightness">1</float>
-            <ColorSequence name="Color">0 0.8392157 0.67058825 0 0 1 1 0.91764706 0.43529412 0 </ColorSequence>
+            <ColorSequence name="Color">0 0.839216 0.670588 0 0 1 1 0.917647 0.435294 0 </ColorSequence>
             <float name="CurveSize0">0</float>
             <float name="CurveSize1">0</float>
             <bool name="Enabled">false</bool>
@@ -681,8 +684,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">null</Ref>
-            <Ref name="Part1">null</Ref>
+            <Ref name="Part0Internal">null</Ref>
+            <Ref name="Part1Internal">null</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -796,6 +799,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">256</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2759059887</url>
           </Content>
@@ -871,8 +875,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">18</Ref>
-            <Ref name="Part1">20</Ref>
+            <Ref name="Part0Internal">18</Ref>
+            <Ref name="Part1Internal">20</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>
@@ -942,6 +946,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">256</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2759059761</url>
           </Content>
@@ -1017,8 +1022,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">20</Ref>
-            <Ref name="Part1">4</Ref>
+            <Ref name="Part0Internal">20</Ref>
+            <Ref name="Part1Internal">4</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>

@@ -116,7 +116,7 @@ local LinearValue = {} do
 
 	function LinearValue:__add(rhs)
 		-- vector + vector
-		assert(type(rhs) == 'table')
+		assert(type(rhs) == 'table', "The provided value has to be a table.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
@@ -128,7 +128,7 @@ local LinearValue = {} do
 
 	function LinearValue:__sub(rhs)
 		-- vector - vector
-		assert(type(rhs) == 'table')
+		assert(type(rhs) == 'table', "The provided value has to be a table.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
@@ -140,7 +140,7 @@ local LinearValue = {} do
 
 	function LinearValue:__mul(rhs)
 		-- vector*scalar
-		assert(type(rhs) == 'number')
+		assert(type(rhs) == 'number', "The provided value " .. rhs .. " has to be a number.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
@@ -152,7 +152,7 @@ local LinearValue = {} do
 
 	function LinearValue:__div(rhs)
 		-- vector/scalar
-		assert(type(rhs) == 'number')
+		assert(type(rhs) == 'number', "The provided value " .. rhs .. " has to be a number.")
 
 		local out = LinearValue.new(unpack(self))
 		for i = 1, #out do
@@ -225,7 +225,7 @@ steppedEvent:Connect(function(dt)
 	for object, state in pairs(springStates) do
 		for name, spring in pairs(state) do
 			local oldValue = object[name]
-			local meta = assert(springMetadata[typeof(oldValue)])
+			local meta = assert(springMetadata[typeof(oldValue)], "SpringMetadata does not contain a member as " .. typeof(oldValue))
 
 			local oldIntermediate = meta.toIntermediate(oldValue)
 			local newIntermediate = spring:step(dt, oldIntermediate)

@@ -31,7 +31,7 @@ To get the forked model, you can follow these instructions:
 ## Instructions for Roblox Studio
 Get the model here: https://www.roblox.com/library/8165353230/WeaponsSystemFork
 
-Go to Roblox Studio, open a place and open your toolbox. Then go to the second tab and select "My Models". Drag the model you've taken from Roblox website to viewport or explorer. Place the folders to their respective places. For example, if a folder is under a model named "ReplicatedStorage", put it to ReplicatedStorage **without** including the model instance. If you are still unsure about the process, check out my video about it (https://youtu.be/5kGnpnJnUio) or inspect the place located in source code's StudioPlace folder. Download and open it for an example.
+Go to Roblox Studio, open a place and open your toolbox. Then go to the second tab and select "My Models". Drag the model you've taken from Roblox website to viewport or explorer. Place the folders to their respective places. For example, if a folder is under a model named "ReplicatedStorage", put it to ReplicatedStorage **without** including the model instance. If you are still unsure about the process, check out my video about it (https://youtu.be/5kGnpnJnUio) or inspect the place located in source code's PlaceBuild folder. Download and open it for an example.
 
 You can also download the model file directly from "Releases" page.
 
@@ -75,6 +75,16 @@ These are located in the Configuration folder of your specific weapon.
     - Characters need to have their character head part named "Head" for this to be compatible.
 
     > If you want to set a headshot multiplier, put a NumberValue in your gun's Configuration folder, name it **HeadshotMultiplier** and set its value to the multiplier amount you want. Keep in mind that negative values and 0 might have side effects. Defaults to **1** which disables headshot multiplier.
+
+## Client configuration options
+This is a feature which is not present in original version, sometimes you might want to change the player walk speed in game and if this change is not done, the gun script will overwrite the walk speed you set for player (guns have walk speed settings for both aiming and sprinting, also the normal walk speed gets set when player stops interacting with the gun). There are some more configuration options and all of them are listed here:
+
+These are located in ClientDefaultValues which is in WeaponsSystem folder's Assets folder. This folder gets parented to the player object once player joins, so that's where you can change these values from.
+
+1) SprintingWalkSpeed [NumberValue]: The walk speed which will get applied when the player is sprinting.
+2) NormalWalkSpeed [NumberValue]: The walk speed which will get applied when player stops interacting with their gun.
+3) ZoomWalkSpeed [NumberValue]: The walk speed which will get applied when player starts zooming with a gun.
+4) FieldofView [NumberValue]: The field of view which will be the base field of view for guns.
 
 # Issues
 I'd rather seeing all issues with this gun kit fork with GitHub's issues feature and not with anything else. I will try to take care of them as much as possible.

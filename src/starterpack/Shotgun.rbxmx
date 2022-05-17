@@ -79,6 +79,7 @@
         <bool name="Locked">false</bool>
         <bool name="Massless">false</bool>
         <token name="Material">256</token>
+        <string name="MaterialVariantSerialized"></string>
         <CoordinateFrame name="PivotOffset">
           <X>0</X>
           <Y>0</Y>
@@ -244,6 +245,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">1088</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2492972666</url>
           </Content>
@@ -364,6 +366,7 @@
           <bool name="Locked">false</bool>
           <bool name="Massless">false</bool>
           <token name="Material">1088</token>
+          <string name="MaterialVariantSerialized"></string>
           <Content name="MeshID">
             <url>rbxassetid://2492972199</url>
           </Content>
@@ -452,7 +455,7 @@
             <BinaryString name="AttributesSerialize">
             </BinaryString>
             <float name="Brightness">1</float>
-            <ColorSequence name="Color">0 0.8392157 0.67058825 0 0 1 1 0.91764706 0.43529412 0 </ColorSequence>
+            <ColorSequence name="Color">0 0.839216 0.670588 0 0 1 1 0.917647 0.435294 0 </ColorSequence>
             <float name="CurveSize0">0</float>
             <float name="CurveSize1">0</float>
             <bool name="Enabled">false</bool>
@@ -565,8 +568,8 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Ref name="Part0">4</Ref>
-            <Ref name="Part1">5</Ref>
+            <Ref name="Part0Internal">4</Ref>
+            <Ref name="Part1Internal">5</Ref>
             <int64 name="SourceAssetId">-1</int64>
             <int name="State">3</int>
             <BinaryString name="Tags"></BinaryString>

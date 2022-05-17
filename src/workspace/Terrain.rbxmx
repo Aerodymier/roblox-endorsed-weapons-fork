@@ -50,6 +50,7 @@
       <bool name="Massless">false</bool>
       <token name="Material">256</token>
       <BinaryString name="MaterialColors"><![CDATA[AAAAAAAAan8/P39rf2Y/ilY+j35fi21PZmxvZbDqw8faiVpHOi4kHh4lZlw76JxKc3trhHtagcLgc4RKxr21zq2UlJSM]]></BinaryString>
+      <string name="MaterialVariantSerialized"></string>
       <BinaryString name="PhysicsGrid"><![CDATA[AgMAAAAAAAAAAAAAAAA=]]></BinaryString>
       <CoordinateFrame name="PivotOffset">
         <X>0</X>
