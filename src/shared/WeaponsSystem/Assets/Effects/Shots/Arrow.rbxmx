@@ -48,6 +48,7 @@
       <bool name="Locked">false</bool>
       <bool name="Massless">false</bool>
       <token name="Material">256</token>
+      <string name="MaterialVariantSerialized"></string>
       <CoordinateFrame name="PivotOffset">
         <X>0</X>
         <Y>0</Y>
@@ -148,7 +149,7 @@
         <BinaryString name="AttributesSerialize">
         </BinaryString>
         <float name="Brightness">1</float>
-        <ColorSequence name="Color">0 1 1 1 0 1 1 0.9647059 0.8862745 0 </ColorSequence>
+        <ColorSequence name="Color">0 1 1 1 0 1 1 0.964706 0.886275 0 </ColorSequence>
         <float name="CurveSize0">0</float>
         <float name="CurveSize1">0</float>
         <bool name="Enabled">false</bool>
@@ -164,7 +165,7 @@
         <float name="TextureLength">0.5</float>
         <token name="TextureMode">0</token>
         <float name="TextureSpeed">0</float>
-        <NumberSequence name="Transparency">0 1 0 0.05121639 0.74863386 0 0.12676057 1 0 0.19334187 0.44262296 0 0.25096032 1 0 0.35339308 0.25136614 0 0.418694 1 0 0.47119078 0.14754099 0 0.5377721 0.8579235 0 0.653009 0 0 0.71702945 1 0 0.8143406 0 0 0.89628685 1 0 0.99231756 0 0 1 1 0 </NumberSequence>
+        <NumberSequence name="Transparency">0 1 0 0.0512164 0.748634 0 0.126761 1 0 0.193342 0.442623 0 0.25096 1 0 0.353393 0.251366 0 0.418694 1 0 0.471191 0.147541 0 0.537772 0.857924 0 0.653009 0 0 0.717029 1 0 0.814341 0 0 0.896287 1 0 0.992318 0 0 1 1 0 </NumberSequence>
         <float name="Width0">0.25</float>
         <float name="Width1">0.25</float>
         <float name="ZOffset">0</float>
@@ -178,7 +179,7 @@
         <BinaryString name="AttributesSerialize">
         </BinaryString>
         <float name="Brightness">1</float>
-        <ColorSequence name="Color">0 1 1 1 0 1 0.8627451 0.8627451 0.8627451 0 </ColorSequence>
+        <ColorSequence name="Color">0 1 1 1 0 1 0.862745 0.862745 0.862745 0 </ColorSequence>
         <float name="CurveSize0">0</float>
         <float name="CurveSize1">0</float>
         <bool name="Enabled">false</bool>
@@ -194,7 +195,7 @@
         <float name="TextureLength">1</float>
         <token name="TextureMode">0</token>
         <float name="TextureSpeed">0</float>
-        <NumberSequence name="Transparency">0 1 0 0.08578745 0.75409836 0 0.26248398 0.55191255 0 0.6043534 0.43169403 0 0.88988477 0.43169403 0 0.99103713 0.28415304 0 1 1 0 </NumberSequence>
+        <NumberSequence name="Transparency">0 1 0 0.0857875 0.754098 0 0.262484 0.551913 0 0.604353 0.431694 0 0.889885 0.431694 0 0.991037 0.284153 0 1 1 0 </NumberSequence>
         <float name="Width0">0.25</float>
         <float name="Width1">0.25</float>
         <float name="ZOffset">0</float>
@@ -234,10 +235,15 @@
           <BinaryString name="AttributesSerialize">
           </BinaryString>
           <float name="Brightness">1</float>
-          <ColorSequence name="Color">0 1 0 1 0 0.18968385 1 0 1 0 0.20632279 0.33333334 0.30980393 0.2901961 0 1 0.26666668 0.26666668 0.26666668 0 </ColorSequence>
+          <ColorSequence name="Color">0 1 0 1 0 0.189684 1 0 1 0 0.206323 0.333333 0.309804 0.290196 0 1 0.266667 0.266667 0.266667 0 </ColorSequence>
           <float name="Drag">0.5</float>
           <token name="EmissionDirection">5</token>
           <bool name="Enabled">true</bool>
+          <NumberRange name="FlipbookFramerate">1 1 </NumberRange>
+          <string name="FlipbookIncompatible">Particle texture must be 1024 by 1024 to use flipbooks.</string>
+          <token name="FlipbookLayout">0</token>
+          <token name="FlipbookMode">0</token>
+          <bool name="FlipbookStartRandom">false</bool>
           <NumberRange name="Lifetime">0.1 2 </NumberRange>
           <float name="LightEmission">0.1</float>
           <float name="LightInfluence">1</float>
@@ -250,7 +256,7 @@
           <token name="ShapeInOut">0</token>
           <float name="ShapePartial">1</float>
           <token name="ShapeStyle">0</token>
-          <NumberSequence name="Size">0 0 0 0.28542915 2.0486112 0.44092098 0.46706587 3.159722 1.7487373 0.89021957 4.756944 2.937265 1 5.0347223 4.9652777 </NumberSequence>
+          <NumberSequence name="Size">0 0 0 0.285429 2.04861 0.440921 0.467066 3.15972 1.74874 0.89022 4.75694 2.93726 1 5.03472 4.96528 </NumberSequence>
           <int64 name="SourceAssetId">-1</int64>
           <NumberRange name="Speed">0 10 </NumberRange>
           <Vector2 name="SpreadAngle">
@@ -263,7 +269,7 @@
             <url>rbxasset://textures/particles/smoke_main.dds</url>
           </Content>
           <float name="TimeScale">1</float>
-          <NumberSequence name="Transparency">0 1 0 0.0049875313 0 0 0.15710723 0 0 0.2543641 0.69135803 0.17901236 0.53491277 0.84567904 0.056321718 0.8478803 0.97530866 0.024691343 1 1 0 </NumberSequence>
+          <NumberSequence name="Transparency">0 1 0 0.00498753 0 0 0.157107 0 0 0.254364 0.691358 0.179012 0.534913 0.845679 0.0563217 0.84788 0.975309 0.0246913 1 1 0 </NumberSequence>
           <float name="VelocityInheritance">-0.001</float>
           <float name="ZOffset">0</float>
         </Properties>

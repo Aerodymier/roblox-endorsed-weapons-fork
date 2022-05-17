@@ -10,6 +10,11 @@
       <bool name="IgnoreGuiInset">true</bool>
       <bool name="ResetOnSpawn">false</bool>
       <Ref name="RootLocalizationTable">null</Ref>
+      <token name="SelectionBehaviorDown">0</token>
+      <token name="SelectionBehaviorLeft">0</token>
+      <token name="SelectionBehaviorRight">0</token>
+      <token name="SelectionBehaviorUp">0</token>
+      <bool name="SelectionGroup">false</bool>
       <int64 name="SourceAssetId">-1</int64>
       <BinaryString name="Tags"></BinaryString>
       <token name="ZIndexBehavior">1</token>
@@ -55,7 +60,13 @@
         <Ref name="RootLocalizationTable">null</Ref>
         <float name="Rotation">0</float>
         <bool name="Selectable">false</bool>
+        <token name="SelectionBehaviorDown">0</token>
+        <token name="SelectionBehaviorLeft">0</token>
+        <token name="SelectionBehaviorRight">0</token>
+        <token name="SelectionBehaviorUp">0</token>
+        <bool name="SelectionGroup">false</bool>
         <Ref name="SelectionImageObject">null</Ref>
+        <int name="SelectionOrder">0</int>
         <UDim2 name="Size">
           <XS>1</XS>
           <XO>0</XO>
@@ -129,7 +140,13 @@
           <float name="Rotation">0</float>
           <token name="ScaleType">0</token>
           <bool name="Selectable">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>1</XS>
             <XO>0</XO>
@@ -212,7 +229,13 @@
             <Ref name="RootLocalizationTable">null</Ref>
             <float name="Rotation">0</float>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>1</XS>
               <XO>0</XO>
@@ -268,7 +291,13 @@
             <Ref name="RootLocalizationTable">null</Ref>
             <float name="Rotation">0</float>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>1</XS>
               <XO>0</XO>
@@ -324,7 +353,13 @@
             <Ref name="RootLocalizationTable">null</Ref>
             <float name="Rotation">0</float>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>5</XS>
               <XO>0</XO>
@@ -380,7 +415,13 @@
             <Ref name="RootLocalizationTable">null</Ref>
             <float name="Rotation">0</float>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>5</XS>
               <XO>0</XO>
@@ -438,7 +479,13 @@
         <Ref name="RootLocalizationTable">null</Ref>
         <float name="Rotation">0</float>
         <bool name="Selectable">false</bool>
+        <token name="SelectionBehaviorDown">0</token>
+        <token name="SelectionBehaviorLeft">0</token>
+        <token name="SelectionBehaviorRight">0</token>
+        <token name="SelectionBehaviorUp">0</token>
+        <bool name="SelectionGroup">false</bool>
         <Ref name="SelectionImageObject">null</Ref>
+        <int name="SelectionOrder">0</int>
         <UDim2 name="Size">
           <XS>1</XS>
           <XO>0</XO>
@@ -523,7 +570,13 @@
           <token name="ScaleType">0</token>
           <bool name="Selectable">true</bool>
           <bool name="Selected">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0</XS>
             <XO>72</XO>
@@ -625,7 +678,13 @@
           <token name="ScaleType">0</token>
           <bool name="Selectable">true</bool>
           <bool name="Selected">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0</XS>
             <XO>44</XO>
@@ -699,7 +758,13 @@
         <Ref name="RootLocalizationTable">null</Ref>
         <float name="Rotation">0</float>
         <bool name="Selectable">false</bool>
+        <token name="SelectionBehaviorDown">0</token>
+        <token name="SelectionBehaviorLeft">0</token>
+        <token name="SelectionBehaviorRight">0</token>
+        <token name="SelectionBehaviorUp">0</token>
+        <bool name="SelectionGroup">false</bool>
         <Ref name="SelectionImageObject">null</Ref>
+        <int name="SelectionOrder">0</int>
         <UDim2 name="Size">
           <XS>1</XS>
           <XO>0</XO>
@@ -784,7 +849,13 @@
           <token name="ScaleType">0</token>
           <bool name="Selectable">true</bool>
           <bool name="Selected">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0</XS>
             <XO>120</XO>
@@ -886,7 +957,13 @@
           <token name="ScaleType">0</token>
           <bool name="Selectable">true</bool>
           <bool name="Selected">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0</XS>
             <XO>88</XO>
@@ -968,7 +1045,13 @@
           <Ref name="RootLocalizationTable">null</Ref>
           <float name="Rotation">0</float>
           <bool name="Selectable">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0.048</XS>
             <XO>0</XO>
@@ -1042,7 +1125,13 @@
             <float name="Rotation">0</float>
             <token name="ScaleType">0</token>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>0.4167</XS>
               <XO>0</XO>
@@ -1133,7 +1222,13 @@
             <float name="Rotation">180</float>
             <token name="ScaleType">0</token>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>0.417</XS>
               <XO>0</XO>
@@ -1224,7 +1319,13 @@
             <float name="Rotation">270</float>
             <token name="ScaleType">0</token>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>0.417</XS>
               <XO>0</XO>
@@ -1315,7 +1416,13 @@
             <float name="Rotation">90</float>
             <token name="ScaleType">0</token>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>0.417</XS>
               <XO>0</XO>
@@ -1400,7 +1507,13 @@
           <Ref name="RootLocalizationTable">null</Ref>
           <float name="Rotation">0</float>
           <bool name="Selectable">false</bool>
+          <token name="SelectionBehaviorDown">0</token>
+          <token name="SelectionBehaviorLeft">0</token>
+          <token name="SelectionBehaviorRight">0</token>
+          <token name="SelectionBehaviorUp">0</token>
+          <bool name="SelectionGroup">false</bool>
           <Ref name="SelectionImageObject">null</Ref>
+          <int name="SelectionOrder">0</int>
           <UDim2 name="Size">
             <XS>0.048</XS>
             <XO>0</XO>
@@ -1486,7 +1599,13 @@
             <float name="Rotation">180</float>
             <token name="ScaleType">0</token>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>1</XS>
               <XO>0</XO>
@@ -1567,7 +1686,13 @@
             <Ref name="RootLocalizationTable">null</Ref>
             <float name="Rotation">180</float>
             <bool name="Selectable">false</bool>
+            <token name="SelectionBehaviorDown">0</token>
+            <token name="SelectionBehaviorLeft">0</token>
+            <token name="SelectionBehaviorRight">0</token>
+            <token name="SelectionBehaviorUp">0</token>
+            <bool name="SelectionGroup">false</bool>
             <Ref name="SelectionImageObject">null</Ref>
+            <int name="SelectionOrder">0</int>
             <UDim2 name="Size">
               <XS>0.18</XS>
               <XO>0</XO>
@@ -1641,7 +1766,13 @@
               <float name="Rotation">90</float>
               <token name="ScaleType">1</token>
               <bool name="Selectable">false</bool>
+              <token name="SelectionBehaviorDown">0</token>
+              <token name="SelectionBehaviorLeft">0</token>
+              <token name="SelectionBehaviorRight">0</token>
+              <token name="SelectionBehaviorUp">0</token>
+              <bool name="SelectionGroup">false</bool>
               <Ref name="SelectionImageObject">null</Ref>
+              <int name="SelectionOrder">0</int>
               <UDim2 name="Size">
                 <XS>1</XS>
                 <XO>0</XO>

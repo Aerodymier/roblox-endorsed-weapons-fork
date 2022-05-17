@@ -62,6 +62,7 @@
       <bool name="Locked">false</bool>
       <bool name="Massless">false</bool>
       <token name="Material">1088</token>
+      <string name="MaterialVariantSerialized"></string>
       <Content name="MeshID">
         <url>rbxassetid://2794279992</url>
       </Content>

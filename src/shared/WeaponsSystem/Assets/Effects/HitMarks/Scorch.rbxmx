@@ -48,6 +48,7 @@
       <bool name="Locked">false</bool>
       <bool name="Massless">false</bool>
       <token name="Material">256</token>
+      <string name="MaterialVariantSerialized"></string>
       <CoordinateFrame name="PivotOffset">
         <X>0</X>
         <Y>0</Y>
