@@ -1,0 +1,9 @@
+[package]
+name = "User/WeaponsSystem"
+description = "My forked version of Roblox Weapons Kit - client side"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
