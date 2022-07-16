@@ -1,7 +1,6 @@
 # Roblox Endorsed Weapons Fork
 This is a fork of Roblox's "Endorsed Weapons Kit".
-It includes some bug/error fixes from original kit, as well as a camera release script located in StarterPlayerScripts.
-There's also some missing features like TagEditor tags folder and tagHumanoid functions for easy leaderboard integration.
+It includes some bug/error fixes from the original kit, as well as new features which does not exist in Roblox's version.
 
 If you wish, you can get the **original** kits from here:
 
@@ -40,6 +39,17 @@ Clone the repository, you will have all models as rbxmx and all scripts with the
 
 ServerStorage has TagList tags for weapons.
 
+## Instructions for Wally package manager:
+Add this to your [server-dependencies],
+```
+WeaponsKitServer = "aerodymier/weaponskitserver@^0.2.2"
+```
+and this to [dependencies]
+```
+WeaponsKit = "aerodymier/weaponskit@^0.2.2"
+```
+
+Wally installation doesn't work properly for now so it's not recommended to use for the time being.
 # Usage
 Once you install it, it's done! Use the guns from Roblox's kit for other guns. Delete WeaponsSystem folder inside of them after you insert these guns. Alternatively, you can use your own guns, however do not forget to set them up like how Roblox has theirs set up. You should consider having Tag Editor (https://www.roblox.com/library/948084095/Tag-Editor) for custom guns so you can tag them as "WeaponsSystemWeapon".
 
