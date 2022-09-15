@@ -23,6 +23,7 @@ local function disableCamera()
 		camModule.camera:setEnabled(enabled)
 		camModule.gui:setEnabled(enabled)
 		camModule.camera.mouseLocked = enabled
+		--selene: allow(incorrect_standard_library_use)
 		if not enabled then workspace.CurrentCamera.CameraSubject = char.Humanoid end
 	else
 		keyDown = false
