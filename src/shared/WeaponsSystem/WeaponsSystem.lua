@@ -115,6 +115,7 @@ function WeaponsSystem.setup()
 				callback = function() end
 			end
 			WeaponsSystem.connections[remoteEventName .. "Remote"] = remoteEvent.OnServerEvent:Connect(function(...)
+				--selene: allow(mismatched_arg_count)
 				callback(...)
 			end)
 			WeaponsSystem.remoteEvents[remoteEventName] = remoteEvent
@@ -132,6 +133,7 @@ function WeaponsSystem.setup()
 				callback = function() end
 			end
 			remoteFunc.OnServerInvoke = function(...)
+				--selene: allow(mismatched_arg_count)
 				return callback(...)
 			end
 			WeaponsSystem.remoteFunctions[remoteFuncName] = remoteFunc
@@ -383,6 +385,7 @@ function WeaponsSystem.setWeaponEquipped(weapon, equipped)
 				WeaponsSystem.camera:setEnabled(false)
 				WeaponsSystem.gui:setEnabled(false)
 				WeaponsSystem.camera.mouseLocked = false
+				--selene: allow(incorrect_standard_library_use)
 				workspace.CurrentCamera.CameraSubject = weaponUserHumanoid
 				WeaponsSystem.camera.currnetCamera = workspace.CurrentCamera
 			end

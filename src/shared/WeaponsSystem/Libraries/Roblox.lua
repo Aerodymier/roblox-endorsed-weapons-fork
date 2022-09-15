@@ -360,6 +360,7 @@ function Roblox.penetrateCast(ray, ignoreList)
 	local hitPart, hitPoint, hitNormal, hitMaterial = nil, ray.Origin + ray.Direction, Vector3.new(0, 1, 0), Enum.Material.Air
 	while tries < 50 do
 		tries = tries + 1
+		--selene: allow(deprecated) -- TODO
 		hitPart, hitPoint, hitNormal, hitMaterial = workspace:FindPartOnRayWithIgnoreList(ray, ignoreList, false, true)
 		if hitPart and (not hitPart.CanCollide or CollectionService:HasTag(hitPart, "DroppedItemPart") or CollectionService:HasTag(hitPart, "Hidden")) and hitPart.Parent:FindFirstChildOfClass("Humanoid") == nil then
 			table.insert(ignoreList, hitPart)

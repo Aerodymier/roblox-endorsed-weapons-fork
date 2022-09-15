@@ -250,6 +250,7 @@ function ShoulderCamera:setEnabled(enabled)
 
 		self:setZoomFactor(self.currentZoomFactor) -- this ensures that zoomedFOV reflecs currentZoomFactor
 
+		--selene: allow(incorrect_standard_library_use)
 		workspace.CurrentCamera.CameraSubject = self.currentRootPart
 
 		self.occlusionTweenObject = Instance.new("NumberValue")
@@ -638,6 +639,7 @@ function ShoulderCamera:penetrateCast(ray, ignoreList)
 	local hitPart, hitPoint, hitNormal, hitMaterial = nil, ray.Origin + ray.Direction, Vector3.new(0, 1, 0), Enum.Material.Air
 	while tries < 50 do
 		tries = tries + 1
+		--selene: allow(deprecated) -- TODO
 		hitPart, hitPoint, hitNormal, hitMaterial = workspace:FindPartOnRayWithIgnoreList(ray, ignoreList, false, true)
 		if hitPart and not hitPart.CanCollide then
 			table.insert(ignoreList, hitPart)

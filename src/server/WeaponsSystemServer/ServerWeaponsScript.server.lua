@@ -57,6 +57,7 @@ if weaponsSystemFolder == nil then
 	weaponsSystemFolder.Parent = ReplicatedStorage
 end
 
+--selene: allow(incorrect_standard_library_use) -- TODO
 script.Parent = ServerScriptService
 initializeWeaponsSystemAssets()
 local WeaponsSystem = require(weaponsSystemFolder.WeaponsSystem)
