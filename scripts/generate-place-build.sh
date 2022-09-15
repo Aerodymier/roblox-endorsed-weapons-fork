@@ -1,0 +1,1 @@
+rojo build --output ../PlaceBuild/output.rbxlx ../
