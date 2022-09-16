@@ -9,7 +9,6 @@ on:
     - master
 
 jobs:
-
   # Linting process with Selene
   lint:
     name: Lint
