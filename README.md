@@ -2,7 +2,7 @@
 This is a fork of Roblox's "Endorsed Weapons Kit".
 It includes some bug/error fixes from the original kit, as well as new features which does not exist in Roblox's version.
 
-If you wish, you can get the **original** kits from here (these are off-sale right now, Roblox put them off-sale, check the next section):
+If you wish, you can get the **original** kits from here **(these are off-sale right now, Roblox put them off-sale, check the next section)**:
 
 DevHub page: https://developer.roblox.com/en-us/articles/weapons-kit
 
