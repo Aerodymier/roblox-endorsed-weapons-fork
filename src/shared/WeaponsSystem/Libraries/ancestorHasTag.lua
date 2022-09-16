@@ -1,7 +1,7 @@
 local CollectionService = game:GetService("CollectionService")
 
-local function ancestorHasTag(instance, tag)
-	local currentInstance = instance
+local function ancestorHasTag(instance: Instance, tag: string): boolean
+	local currentInstance: Instance = instance
 	while currentInstance do
 		if CollectionService:HasTag(currentInstance, tag) then
 			return true

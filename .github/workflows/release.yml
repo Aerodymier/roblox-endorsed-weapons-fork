@@ -37,7 +37,7 @@ jobs:
           version: 'v0.2.6'
 
       - name: Build model
-        run: rojo build --output model.rbxm .\model.project.json
+        run: rojo build --output model.rbxm ./model.project.json
 
       - name: Upload model to release
         uses: actions/upload-release-asset@v1
@@ -56,7 +56,7 @@ jobs:
           path: model.rbxm
 
       - name: Build place
-        run: rojo build --output PlaceBuild.rbxl .\default.project.json
+        run: rojo build --output PlaceBuild.rbxl ./default.project.json
       
       - name: Upload place to release
         uses: actions/upload-release-asset@v1
