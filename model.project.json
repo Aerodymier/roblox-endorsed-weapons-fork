@@ -1,0 +1,43 @@
+{
+    "name": "endorsed weapons fork",
+    "tree": {
+      "$className": "Folder",
+  
+      "ReplicatedStorage": {
+        "$className": "Folder",
+        "$path": "src/shared"
+      },
+  
+      "ServerScriptService": {
+        "$className": "Folder",
+        "WeaponsSystemServer": {
+          "$path": "src/server"
+        }
+      },
+  
+      "ServerStorage": {
+        "$className": "Folder",
+        "$path": "src/storage"
+      },
+  
+      "StarterPack": {
+        "$className": "Folder",
+        "$path": "src/starterpack"
+      },
+  
+      "StarterPlayer": {
+        "$className": "Folder",
+        "StarterPlayerScripts": {
+            "$className": "Folder",
+          "WeaponsSystemCamera": {
+            "$path": "src/client"
+          }
+        }
+      },
+
+      "README": {
+        "$className": "Folder",
+        "$path": "src/README"
+      }
+    }
+  }

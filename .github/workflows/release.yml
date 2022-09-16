@@ -1,0 +1,75 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: true
+          prerelease: false
+
+build-model:
+  needs: ["create-release"]
+  name: Build the model
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Aftman
+      uses: ok-nick/setup-aftman@v0.1.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        trust-check: false
+        version: 'v0.2.6'
+
+    - name: Build model
+      run: rojo build --output model.rbxm .\model.project.json
+
+    - name: Upload model to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.create-release.outputs.upload_url }}
+        asset_path: model.rbxm
+        asset_name: model.rbxm
+        asset_content_type: application/octet-stream
+
+    - name: Upload model to artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: model.rbxm
+        path: model.rbxm
+
+    - name: Build place
+      run: rojo build --output PlaceBuild.rbxl .\default.project.json
+    
+    - name: Upload place to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.create-release.outputs.upload_url }}
+        asset_path: PlaceBuild.rbxl
+        asset_name: PlaceBuild.rbxl
+        asset_content_type: application/octet-stream
+
+    - name: Upload place to artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: PlaceBuild.rbxl
+        path: PlaceBuild.rbxl
