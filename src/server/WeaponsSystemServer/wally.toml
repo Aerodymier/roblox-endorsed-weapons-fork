@@ -1,7 +1,0 @@
-[package]
-name = "aerodymier/weaponskitserver"
-description = "A fork of Roblox Weapons Kit with fixes and enhancements - server side"
-license = "MIT OR Apache-2.0"
-version = "0.2.2"
-registry = "https://github.com/UpliftGames/wally-index"
-realm = "server"
