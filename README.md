@@ -2,47 +2,27 @@
 This is a fork of Roblox's "Endorsed Weapons Kit".
 It includes some bug/error fixes from the original kit, as well as new features which does not exist in Roblox's version.
 
-If you wish, you can get the **original** kits from here **(these are off-sale right now, Roblox put them off-sale, check the next section)**:
+If you wish, you can get the **original** kits from here:
 
-DevHub page: https://developer.roblox.com/en-us/articles/weapons-kit
+Creator Hub page: https://create.roblox.com/docs/resources/weapons-kit
 
--> Pistol: https://www.roblox.com/library/3932996124/Pistol
+-> Pistol: https://create.roblox.com/store/asset/4842197274/Pistol
 
--> Submachine Gun: https://www.roblox.com/library/3933186135/Submachine-Gun
+-> Submachine Gun: https://www.roblox.com/library/4842212980/Submachine-Gun
 
--> Grenade Launcher: https://www.roblox.com/library/3932970604/Grenade-Launcher
+-> Grenade Launcher: https://www.roblox.com/library/4842201032/Grenade-Launcher
 
--> Rochet Launcher: https://www.roblox.com/library/3933035051/Rocket-Launcher
+-> Rochet Launcher: https://www.roblox.com/library/4842186817/Rocket-Launcher
 
--> Sniper: https://www.roblox.com/library/3933205594/Sniper
+-> Sniper: https://www.roblox.com/library/4842218829/Sniper-Rifle
 
--> Shotgun: https://www.roblox.com/library/3933198517/Shotgun
+-> Shotgun: https://www.roblox.com/library/4842215723/Shotgun
 
--> Auto Rifle: https://www.roblox.com/library/3932803955/Auto-Rifle
+-> Auto Rifle: https://www.roblox.com/library/4842207161/Auto-Rifle
 
--> Crossbow: https://www.roblox.com/library/3932944456/Crossbow
+-> Crossbow: https://www.roblox.com/library/4842204072/Crossbow
 
--> Railgun: https://www.roblox.com/library/3933019552/Railgun
-
-However as I said, Roblox put these off-sale right now so I reuploaded all of them:
-
--> Crossbow: https://www.roblox.com/library/10830571943/Crossbow
-
--> Grenade Launcher: https://www.roblox.com/library/10830575470/Grenade-Launcher
-
--> Pistol: https://www.roblox.com/library/10830585128/Pistol
-
--> Railgun: https://www.roblox.com/library/10830592310/Railgun
-
--> Rocket Launcher: https://www.roblox.com/library/10830596327/Rocket-Launcher
-
--> SMG: https://www.roblox.com/library/10830600060/SMG
-
--> Shotgun: https://www.roblox.com/library/10830603042/Shotgun
-
--> Sniper: https://www.roblox.com/library/10830607080/Sniper
-
--> Auto Rifle: https://www.roblox.com/library/10830629997/Auto-Rifle
+-> Railgun: https://www.roblox.com/library/4842190633/Railgun
 
 # Installations
 To get the forked model, you can follow these instructions:
